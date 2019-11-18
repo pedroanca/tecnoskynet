@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>TecnoSkynet</title>
+  <title>Colaboradores</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shorcut icon" type="image/x-icon" href="images/logo.png">
@@ -12,6 +12,8 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Tomorrow:400,900i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 #logo2{
   padding-left:20px
 }
@@ -34,8 +36,9 @@
   height: 256px;
 }
 #titulo{
-  height: 300px;
-  font-family: 'Tomorrow', sans-serif;
+  height: 200px;
+  font-family: 'Playfair Display', serif;
+
 }
 #slogan{
   font-family: 'Lobster', cursive;
@@ -43,6 +46,18 @@
 #info{
   font-family: 'Tomorrow', sans-serif;
 }
+#letra1{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+#waffles{
+  height: 300px;
+  width: 300px;
+}
+#padding{
+  padding-left: 40px;
+}
+
 .bg-4 {
     background-color: #4D9ACC;
     color: #ffffff;
@@ -51,9 +66,12 @@
   padding-left: 35px;
 }
 .jumbotron {
-    background-image: url(https://wallpaperplay.com/walls/full/4/1/4/42762.jpg);
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(https://collaborateup.com/includes/tmp/f01e1ccde3a4a467093044cd85a2165a.jpg);
     background-size: 1320px;
-    color: #ffff;
+    color: #fff;
     font-family: 'Tomorrow', sans-serif;
 }
 .container-fluid {
@@ -73,6 +91,7 @@
   }
 .bg-primary{
 	transition: all 1s ease;
+  background-color: #22A498;
 }
 .navbar {
       margin-bottom: 0;
@@ -105,77 +124,48 @@
       <ul class="nav navbar-nav">
         <li><a href="index.html">INICIO</a></li>
         <li><a href="about.html">Acerca de nosotros</a></li>
-        <li><a href="us.html">Acerca de colaboradores</a></li>
+        <li class="active"><a href="us.html">Acerca de colaboradores</a></li>
       </ul>
     </div>
   </nav>
+
+
 <div class="jumbotron text-center" id="titulo">
-  <h1>Tecno</h1>
-  <h1>Skynet</h1>
+  <h1>¿Y quiénes conforman TecnoSkynet?</h1>
 </div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8" id="slogan">
-      <h2>"Tu lo imaginas nosotros lo hacemos realidad"</h2>
-      <blockquote>
-      <p id="info">“La ingeniería de software es el establecimiento y uso de
-principios robustos de la ingeniería a fin de obtener
-económicamente software que sea fiable y que funcione
-eficientemente sobre máquinas reales”</p>
-    </blockquote>
-    </div>
-    <div class="col-sm-4">
-      <div id="imagen1"><img width=100% height=100% src="https://image.freepik.com/free-vector/social-network-user-cartoon_23-2147497528.jpg" alt="ICO"></div>
-    </div>
-  </div>
-</div>
+
 
 <div class="container">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="http://getwallpapers.com/wallpaper/full/1/f/f/165628.jpg" alt="ntw" class="d-block w-100">
-      </div>
-
-      <div class="item">
-        <img src="https://wallpaperplay.com/walls/full/8/2/3/42764.jpg" alt="Chicago" class="d-block w-100">
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-
-<div class="container-fluid bg-grey">
   <div class="row">
-    <div class="col-sm-4" id="imagen1">
+    <div class="col-sm-6">
+      <div class="card">
+        <div id="waffles">  <img width="100%" height="100%" src="images/carlos.jpg" class="card-img-top" alt="Carlos"> </div>
+        <div class="card-body">
+          <h1 class="card-title">Carlos Ovando</h1>
+          <p class="card-text">pon aquí tu descripción bb</p>
+          <a onclick="window.location.href = 'https://github.com/wafflesCom';" class="btn btn-primary">GitHub</a>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-8">
-      <blockquote class="blockquote">
-      <h1>Experiencia</h1>
-      <ul>
-        <li>Servicio de gestión de redes FES Aragón 2018 </li>
-        <li>Mantenimiento de dispositivos de red para el Instituto de Ecología UNAM</li>
-        <li>Instalación y configuración de servidores de almacenamiento para el CLOUD FES Aragón</li>
-      </ul>
-      </blockquote>
+    <div class="col-sm-6">
+      <div class="card">
+        <div id="waffles">  <img class="rounded-circle" width="100%" height="100%" src="images/pedro.jpeg" class="card-img-top" alt="Pedro"> </div>
+        <div class="card-body">
+          <h1 class="card-title">Pedro Antúnez</h1>
+          <p class="card-text" id="letra1">Ingeniero en computación FES Aragón UNAM certificación Cloud Computing y CNNA Scrum Master</p>
+        <a onclick="window.location.href = 'https://github.com/pedroanca';" class="btn btn-primary">GitHub</a>
+        <a onclick="window.location.href = 'https://fb.com/peedro.antuneez';" class="btn btn-primary">Facebook</a>
+        <a onclick="window.location.href = 'https://twitter.com/pedro_anca';" class="btn btn-primary">Twitter</a>
+        <a href="mailto:pedroantunezca@gmail.com" class="btn btn-primary">E-Mail</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+<div class="text-center">
+  <img src="http://www.emprendedorsublime.com/articulos/imgs/organigrama-de-una-empresa-pequena-8352-8352-34.jpg" alt="">
+</div>
 
 
 <footer class="container-fluid bg-4 text-left">
